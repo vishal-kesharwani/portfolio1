@@ -70,7 +70,12 @@ export default function Intro() {
             <h1 className="text-3xl sm:text-4xl font-bold mb-4">
               HELLO I AM VISHAL KESHARWANI
             </h1>
-            <span className="font-bold">Hello, I'm Vishal Kesharwani.</span> I'm a{" "}
+            <span className="font-bold">Hello, I'm Vishal Kesharwani.</span>
+            // Change to:
+            <h1 className="text-3xl sm:text-4xl font-bold mb-4">
+              Vishal Kesharwani
+            </h1>
+            <span className="font-bold">Full Stack Developer & Cloud Engineer</span>
             <span className="font-bold">B.Tech Computer Engineering Student</span> at{" "}
             <a 
               href="https://mitaoe.ac.in/" 

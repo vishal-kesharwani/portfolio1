@@ -49,7 +49,8 @@ export default function Skills() {
             }}
             custom={index}
           >
-            <Icon icon={skill.icon} className="text-5xl md:text-7xl" />
+            // Change to:
+            <Icon icon={skill.icon as string} className="text-5xl md:text-7xl" />
             <span className="mt-2">{skill.name}</span>
           </motion.li>
         ))}
