@@ -1,249 +1,93 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import cryptoCrowdImg from "@/public/cryptocrowd2.png";
-import ozdevsImg from "@/public/ozdevs-two.png";
-import assetTradingImg from "@/public/asset-trading.jpg";
-import euphorusImg from "@/public/euphorus-two.png";
-import euphorusBackendImg from "@/public/euphorus-backend.png";
-import techprowlImg from "@/public/techprowl-two.png";
-import taskManagerImg from "@/public/task-manager.png";
-import familyTreeImg from "@/public/bfsproject.jpg";
-import binaryGameImg from "@/public//binary-game.png";
+import { BiSolidCaretUpCircle } from "react-icons/bi";
+import ArogyaImg from "@/public/arogya.png";
+import SocialyticsImg from "@/public/socialytics.jpeg";
+import reportImg from "@/public/reportease.jpg";
 
+// Navigation Links
 export const links = [
-  {
-    name: "Home",
-    hash: "#home",
-  },
-  {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
-    name: "Education",
-    hash: "#education",
-  },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
+  { name: "Home", hash: "#home" },
+  { name: "Projects", hash: "#projects" },
+  { name: "Skills", hash: "#skills" },
+  { name: "Achievements", hash: "#achievements" },
+  { name: "Education", hash: "#education" },
+  { name: "Contact", hash: "#contact" },
 ] as const;
 
+// Experience Data
 export const experiencesData = [
   {
-    title: "Software Engineer",
-    location: "Humanforce",
-    description:
-      "Software engineer in the intelliHR platform team. We are a feature enablement team dedicated to developing features for developers, ensuring they are easier to create. We also look after issues of scale and technical debt for developers and the platform.",
-    icon: React.createElement(CgWorkAlt),
-    date: "January 2024 - Present",
+    title: "E-Summit Ideathon 2024 Winner",
+    description: "An AI-powered website to streamline college report generation for better efficiency.",
+    icon: React.createElement(BiSolidCaretUpCircle),
+    date: "2024 November"
   },
   {
-    title: "Software Engineer",
-    location: "The University of Queensland",
-    description:
-      "Full-stack software engineer in the Application Development and Support team. Worked on web applications such as CAHP (Casual Academic Hire and Payment), UQ Maps, UQ Donations, and Programs and Courses.",
-    icon: React.createElement(CgWorkAlt),
-    date: "November 2022 - January 2024",
+    title: "Smart India Hackathon Grand Finalist",
+    description: "Selected among top nationwide teams for implementation of a cloud-based, AI powered Annual Report Generation Portal",
+    icon: React.createElement(BiSolidCaretUpCircle),
+    date: "2024 January"
   },
   {
-    title: "Junior Developer",
-    location: "YouPay",
-    description:
-      "Developed new features using Laravel, Vue.js, PHP, JavaScript, Tailwind CSS, MySQL and REST APIs. Created an email notification system for mechants to receive weekly/monthly summaries of YouPay carts created, paid and cancelled. I also integrated YouPay into dozens of stores.",
-    icon: React.createElement(CgWorkAlt),
-    date: "February 2022 - November 2022",
+    title: "Cavista Tech Hackathon 1st Runner-Up",
+    description: "Created AI/ML based portal for HomeHealth to remotely predict and recommend the best home health care services. AI chatbot for health-related queries.",
+    icon: React.createElement(BiSolidCaretUpCircle),
+    date: "2025 February"
   },
   {
-    title: "Web Developer",
-    location: "M3 Digital - Contract",
-    description:
-      "Front-end development for a variety of Shopify stores such as FitazFK, Rider Collective, Masseuse Massage, Francesca Jewellery and Salty Captain. Developed high quality landing pages and front end features using HTML, CSS, SCSS, JavaScript and Liquid.",
-    icon: React.createElement(CgWorkAlt),
-    date: "September 2021 - February 2022",
+    title: "Datathon'25 1st Runner Up (TY Category)",
+    description: "Developed a game-based learning platform using React and Node.js with real-time analytics",
+    icon: React.createElement(BiSolidCaretUpCircle),
+    date: "2025 March"
   },
 ] as const;
 
+// Projects Data
 export const projectsData = [
   {
-    title: "CryptoCrowd",
-    description:
-      "Cryptocurrency sentiment analysis website based on Twitter posts. Users can see the overall sentiment (positive, negative or neutral) of different Cryptocurrencies based on what people are currently posting on Twitter. Users can also see keywords and an average sentiment score. Stateless application that uses Elasticache and S3 on AWS. It also used EC2 and auto-scaling to manage demand.",
-    tags: ["JavaScript", "React", "Express.js", "AWS"],
-    icons: [
-      "logos:aws",
-      "logos:javascript",
-      "logos:react",
-      "logos:bootstrap",
-      "logos:express",
-    ],
-    imageUrl: cryptoCrowdImg,
-    githubLink: "https://github.com/ben04rogers/cab432-assignment-2",
-    demoLink: "https://www.youtube.com/watch?v=uhyC0M4WIl4",
+    title: "Social Media Performance Analysis",
+    description: "AI-driven analytics platform using Langchain & Astra DB (60% efficiency improvement).",
+    tags: ["Langchain", "React.js", "Data Visualization"],
+    icons: ["simple-icons:langchain", "skill-icons:react-dark", "vscode-icons:file-type-astro"],
+    imageUrl: SocialyticsImg,
+    githubLink: "https://github.com/HBTK/Social-Media-Performance",
   },
   {
-    title: "OzDevs",
-    description:
-      "Reverse Job board for companies looking to hire developers in Australia. Filter by experience, location and keyboards.  Companies can pay a monthly fee to be able to message developers on the site and view their information.",
-    tags: ["PHP", "Laravel", "JavaScript", "Tailwind", "MySQL"],
-    icons: [
-      "logos:laravel",
-      "logos:php",
-      "logos:javascript",
-      "devicon:tailwindcss",
-      "logos:mysql",
-    ],
-    imageUrl: ozdevsImg,
-    urlLink: "https://clownfish-app-48u2r.ondigitalocean.app/",
-    githubLink: "https://github.com/ben04rogers/ozdevs-v2",
+    title: "ReportEase - SaaS Platform",
+    description: "Cloud-based report automation system with RBAC integration (50% effort reduction).",
+    tags: ["AWS", "MERN Stack", "RBAC"],
+    icons: ["skill-icons:aws-dark", "skill-icons:mongodb", "skill-icons:react-dark"],
+    imageUrl: reportImg,
+    githubLink: "https://github.com/vishal-kesharwani/v_07",
   },
   {
-    title: "Company Asset Trading",
-    description:
-      "Client-server system written in Java for trading of virtual assets within departments of a company. Facilitated trades via a marketplace model where users can buy and sell assets. Admins of an organisation can create assets, users and modify details. Uses MariaDB as a database and Swing for the GUI.",
-    tags: ["Java", "MariaDB", "Swing"],
-    icons: ["logos:java", "logos:mariadb-icon"],
-    imageUrl: assetTradingImg,
-    githubLink: "https://github.com/ben04rogers/organisation-asset-trading",
-  },
-  // {
-  //   title: "Euphorus",
-  //   description:
-  //     "React application for viewing country happiness data collected from the World Happiness Report initiative. Users can filter by year, country and search limit. AG Grid and Chart.js were used to present the data.",
-  //   tags: ["JavaScript", "React", "Bootstrap"],
-  //   icons: ["logos:javascript", "logos:react", "logos:bootstrap"],
-  //   imageUrl: euphorusImg,
-  //   githubLink: "https://github.com/ben04rogers/cab230assignment1",
-  // },
-  // {
-  //   title: "Country Happiness API",
-  //   description:
-  //     "Developed and deployed an Express API to support the front-end of the Euphorus Happiness Data web application. Routes support query parameters and authorization using JWT. Includes endpoints for countries, rankings, factors, registration, login, and profile. Tested software extensively with Jest and created Swagger documentation for the API as well.      ",
-  //   tags: ["JavaScript", "Node.js", "Express.js", "Swagger", "MySQL"],
-  //   icons: ["logos:javascript", "logos:express", "logos:swagger", "cib:mysql"],
-  //   imageUrl: euphorusBackendImg,
-  //   githubLink: "https://github.com/ben04rogers/cab230assignment2",
-  // },
-  {
-    title: "Techprowl Computer Auction",
-    description:
-      "Computer auction application built with Flask. The site allows users to register, bid on items, leave reviews, post new listings, manage listings, search by keyword, and keep a watch list. ",
-    tags: ["Python", "Flask", "Bootstrap", "SQLite"],
-    icons: ["logos:python", "logos:bootstrap", "logos:sqlite"],
-    imageUrl: techprowlImg,
-    githubLink: "https://github.com/ben04rogers/computer-auction",
-    urlLink: "https://techprowl.herokuapp.com",
-  },
-  {
-    title: "Task Manager Console App",
-    description:
-      "Console app that manages tasks in a project. Users can load projects from a file and generate a seqeuence to complete them in, based on each task's dependencies. Users can also find earliest possible commencement time of each task, add new tasks, update tasks, remove tasks, and save the results to a text file.",
-    tags: ["C#"],
-    icons: ["devicon:csharp"],
-    imageUrl: taskManagerImg,
-    githubLink: "https://github.com/ben04rogers/task-manager",
-  },
-  {
-    title: "Family Tree Shortest Path",
-    description:
-      "Python program that implements a breadth-first search algorithm to generate a minimal spanning tree. Problem was to calculate a shortest path from a starting vertex in a graph to each other vertex. The vertices represent people and each person is related to every other person through parent-child relationships. A person can see how they are related to each other person in the tree",
-    tags: ["Python"],
-    icons: ["logos:python"],
-    imageUrl: familyTreeImg,
-    githubLink: "https://github.com/ben04rogers/breadth-first-search",
-    demoLink: "https://www.youtube.com/watch?v=VXCZKsqupxA",
-  },
-  {
-    title: "Arduino Binary Game",
-    description:
-      "Binary game written in C that runs on an Arduino Uno using Tinkercad. The game aims to help users learn binary by challenging them to input different integers in their binary form within a time limit.",
-    tags: ["C"],
-    icons: ["devicon:c"],
-    imageUrl: binaryGameImg,
-    githubLink: "https://github.com/ben04rogers/binary-game-microcontroller",
-    demoLink: "https://www.youtube.com/watch?v=A6n6XDk4Unw&feature=youtu.be",
+    title: "Aarogya",
+    description: "AI-powered healthcare platform with multimodal analysis and real-time treatment insights combining Ayurveda & Allopathy",
+    tags: ["Python", "Keras", "AI/ML", "Web Scraping", "HTML", "CSS", "JavaScript", "Healthcare"],
+    icons: ["logos:python", "simple-icons:keras", "skill-icons:javascript", "vscode-icons:file-type-html", "vscode-icons:file-type-css"],
+    imageUrl: ArogyaImg,
+    githubLink: "https://github.com/virajmandlik/Temp",
+    demoLink: "",
   },
 ] as const;
 
+// Skills Data
 export const skillsData = [
-  {
-    name: "TypeScript",
-    icon: "logos:typescript-icon",
-  },
-  {
-    name: "PHP",
-    icon: "logos:php",
-  },
-  {
-    name: "Laravel",
-    icon: "logos:laravel",
-  },
-  {
-    name: "React",
-    icon: "logos:react",
-  },
-  {
-    name: "GraphQL",
-    icon: "logos:graphql",
-  },
-  {
-    name: "Node.js",
-    icon: "logos:nodejs-icon",
-  },
-  {
-    name: "Symfony",
-    icon: "logos:symfony",
-  },
-  {
-    name: "Python",
-    icon: "logos:python",
-  },
-  {
-    name: "HTML",
-    icon: "vscode-icons:file-type-html",
-  },
-  {
-    name: "CSS",
-    icon: "vscode-icons:file-type-css",
-  },
-  {
-    name: "SCSS",
-    icon: "logos:sass",
-  },
-  {
-    name: "Git",
-    icon: "logos:git-icon",
-  },
-  {
-    name: "MySQL",
-    icon: "logos:mysql",
-  },
-  {
-    name: "PostgreSQL",
-    icon: "logos:postgresql",
-  },
-  {
-    name: "Linux",
-    icon: "flat-color-icons:linux",
-  },
-  {
-    name: "AWS",
-    icon: "logos:aws",
-  },
-  {
-    name: "Docker",
-    icon: "logos:docker-icon",
-  },
-  {
-    name: "Jenkins",
-    icon: "devicon:jenkins",
-  },
+  { name: "Java", icon: "logos:java" },
+  { name: "C++", icon: "skill-icons:cpp" },
+  { name: "MongoDB", icon: "skill-icons:mongodb" },
+  { name: "Red Hat Linux", icon: "logos:redhat" },
+  { name: "React", icon: "logos:react" },
+  { name: "Node.js", icon: "logos:nodejs-icon" },
+  { name: "Python", icon: "logos:python" },
+  { name: "HTML", icon: "vscode-icons:file-type-html" },
+  { name: "CSS", icon: "vscode-icons:file-type-css" },
+  { name: "Git", icon: "logos:git-icon" },
+  { name: "MySQL", icon: "logos:mysql" },
+  { name: "PostgreSQL", icon: "logos:postgresql" },
+  { name: "AWS", icon: "logos:aws" },
+  { name: "Docker", icon: "logos:docker-icon" },
+  { name: "TensorFlow", icon: "logos:tensorflow" },
+  
 ] as const;

@@ -8,10 +8,12 @@ import "./globals.css";
 
 const nunito = Nunito({ subsets: ["latin"] });
 
+// ... existing code ...
 export const metadata = {
-  title: "Ben Rogers | Software Engineer",
-  description: "Software engineer at Humanforce.",
+  title: "Vishal Kesharwani | Computer Engineering Student",
+  description: "B.Tech in Computer Engineering at MITAOE specializing in Cloud Computing, AI/ML, and Blockchain development",
 };
+// ... existing code ...
 
 export default function RootLayout({
   children,
