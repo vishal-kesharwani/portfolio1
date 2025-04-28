@@ -1,7 +1,16 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Dependencies
+node_modules/
 
-# dependencies
-/node_modules
+# Build files
+.next/
+out/
+
+# Environment variables
+.env*.local
+
+# IDE specific
+.vscode/
+.idea/
 /.pnp
 .pnp.js
 
